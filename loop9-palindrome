@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+int n,p,i,rev=0,c=0;
+printf("enter a no");
+scanf("%d",&n);
+p=n;
+do
+{
+i=n%10;
+rev+=i*pow(10,c);
+c++;
+n/=10;
+}while(n!=0)
+if(rev==p)
+printf("the given number is a palindrome");
+else
+printf("The given no is not a palindrome");
+}
