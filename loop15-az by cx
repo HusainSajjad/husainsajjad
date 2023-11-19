@@ -1,0 +1,8 @@
+#include<stdio.h>
+main()
+{
+char j,i;
+for(i='a',j='z';i<='z';i++;j--)
+printf("\t%c%c",i,j);
+return 0;
+}
