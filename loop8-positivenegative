@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+int n,po=0,ne=0,i;
+do
+{
+printf("Enter a positive or a negative number");
+scanf("%d",&n);
+if(n>0)
+po++;
+else if(n<0)
+ne++;
+printf("enter 0 if you wanna discontinue");
+scanf("%d",&i);
+}while(i!=0)
+printf("The positive count = %d and the negative count = %d",po,ne);
+}
