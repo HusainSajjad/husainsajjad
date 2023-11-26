@@ -8,6 +8,7 @@ do{
 r=bin%10;
 dec+=r*pow(2,i);
 bin/=10;
+i+=1;
 }while(bin!=0)
 printf("the decimal equivalent is %d",dec);
 }
