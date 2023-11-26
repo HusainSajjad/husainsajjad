@@ -7,6 +7,6 @@ main()
     for(b=0;b<=1;b++){
     for(c=0;c<=1;c++){
         t=p+a*85+b*225+c*300;
-    printf("\n%d            %d        %d             %d         %d",p,a,b,c,t);}}    
+    printf("\n%d            %d        %d              %d             %d",p,a,b,c,t);}}    
     }
 }
