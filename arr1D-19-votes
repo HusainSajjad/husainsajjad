@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a[10],n,i;
+    char ch;
+    for(i=0;i<=5;i++)
+    a[i]=0;
+    do
+    {
+        printf("Cast your vote(1to 5 only) : ");
+        scanf("%d",&n);
+        printf("Enter y if you wanna continue: ");
+        scanf("%c",&ch);
+        switch(n)
+        {
+            case 1: a[1]++;
+            break;
+            case 2: a[2]++;
+            break;
+            case 3: a[3]++;
+            break;
+            case 4: a[4]++;
+            break;
+            case 5: a[5]++;
+            break;
+            default: a[0]++;
+            break;
+        }
+    }while(ch=='y');
+    for(i=1;i<=5;i++)
+    printf("%d got %d votes.",i,a[i]);
+    printf("No of Spoilt votes are %d",a[0]);
+}
