@@ -1,1 +1,19 @@
-
+#include <stdio.h>
+#include <math.h>
+int power(int,int,int);
+int main() {
+    int a,b,c;
+   printf("Enter 3 numbers : ");
+   scanf("%d%d%d",&a,&b,&c);
+   power(a,b,c);
+   printf("%d",power);
+}
+int power(int a,int b,int c)
+{
+ int f;
+ if(pow(a,b)==c)
+ f=1;
+ else
+ f=0;
+ return f;
+}
