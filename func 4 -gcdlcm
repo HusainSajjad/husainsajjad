@@ -1,0 +1,23 @@
+#include <stdio.h>
+int g(int,int);
+int c;
+int main()
+{
+int a,b,gcd,lcm;
+printf("Enter 2 numbers: ");
+scanf("%d%d",&a,&b);
+gcd=g(a,b);
+lcm=a*b/gcd;
+printf("The gcd is %d and lcm is %d",gcd,lcm);
+}
+int g(int a, int b)
+{
+int count=1;
+while(count<=a && count <=b)
+{
+if(a%count==0 && b%count==0)
+c=count;
+count++;
+}
+return c;
+}
